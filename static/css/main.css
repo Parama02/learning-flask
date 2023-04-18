@@ -1,0 +1,152 @@
+
+/* Responsive Design */
+
+body{
+  background-color: white;
+  font-family: poppins;
+}
+
+#navigation{
+  background-color: teal;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+}
+
+/*            */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  max-width: 80%;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .video-container {
+    padding-bottom: 0;
+  }
+  
+  .content {
+    position: static;
+    margin-top: 20px;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    position: static;
+    margin-top: 20px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .content h1 {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/* Hero section  */
+
+.hero{
+  margin:120px 0px;
+}
+
+.pic1{
+  width:80rem;
+}
+
+
+/* section 1 cards  */
+
+.icon{
+  display:block;
+  margin: auto;
+}
+
+
+.section1 .card{
+  border:0;
+}
+
+
+/* section2  */
+
+.section2{
+  margin:100px 0px;
+}
+
+.pic2{
+  width:75rem;
+}
+
+/* text styling  */
+
+.color{
+  color: teal;
+  font-weight: bolder;
+}
+
+.card_para{
+  font-size:0.8rem;
+}
+
+/* anchor  */
+
+a{
+  font-size: medium;
+}
+
+a:hover{
+
+  background: rgb(26, 187, 196);
+  color: white;
+  transition: .6s;
+  text-decoration: none;
+}
+
+/* footer   */
+
+footer{
+  background-color:teal;
+}
+
+.ftr_para{
+  font-size: 1rem;
+}
+
+
+/*  scroll effect  */
+
+#about, #service{
+  scroll-behavior: smooth ;
+}
